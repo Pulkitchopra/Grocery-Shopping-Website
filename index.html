@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shopping Website </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="https://img.icons8.com/fluency/48/null/shopping-basket.png"/>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Features">Features</a></li>
+                    <li><a href="#Categories">Categories</a></li>
+                    <li><a href="#Products">Products</a></li>
+                    <li><a href="#Reviews">Reviews</a></li>
+                    <li><a href="#Blogs">Blogs</a></li>
+                </ul>
+
+            </div>
+            <div class="right">
+                <img src="https://img.icons8.com/ios-glyphs/30/null/menu--v1.png" id="menubutton"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/null/search--v1.png" id="searchbutton"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/null/user--v1.png" id="usersbtn"/>
+                <img src="https://img.icons8.com/ios-filled/50/null/shopping-bag.png" id="bagbutton"/>
+            </div>
+            <form action="" class="search-form">
+                <input type="search" id="searchbox" placeholder="Search">
+                <label for="searchbox" class="fa fa-search">
+                </label>
+            
+            </form>
+            <div class="shopping-bag">
+                <div class="box">
+                    <img src="https://img.icons8.com/material-rounded/24/null/delete.png" class="bin"/>
+                    <img src="/images/art-rachen-izi5AnlbRIA-unsplash.jpg" alt="" class="bag-img">
+                    <div class="bag">
+                        <h3>Watermelon</h3>
+                        <span class="price">Rs100/-</span>
+                        <span class="quantity">qty:1</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://img.icons8.com/material-rounded/24/null/delete.png" class="bin"/>
+                    <img src="/images/deon-black-aEwNCA_uiVg-unsplash.jpg" alt="" class="bag-img">
+                    <div class="bag">
+                        <h3>Banana</h3>
+                        <span class="price">Rs100/-</span>
+                        <span class="quantity">qty:1</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://img.icons8.com/material-rounded/24/null/delete.png" class="bin"/>
+                    <img src="/images/vivek-sharma-rDDICrot22U-unsplash.jpg" alt="" class="bag-img">
+                    <div class="bag">
+                        <h3>Onion</h3>
+                        <span class="price">Rs100/-</span>
+                        <span class="quantity">qty:1</span>
+                    </div>
+                </div>
+                <div class="total">Total: Rs 158/-</div>
+                <!-- <button class="btn">Buy</button> -->
+                <a href="" class="btn">Purchase Items</a>
+            </div>
+            <form action="" class="loginform">
+                <h3>Login</h3>
+                <input type="email" placeholder="Enter your Email" class="box">
+                <input type="password" placeholder="Enter your password" class="box">
+                <p>Forgot Your Password <a href="#">Click Here</a></p>
+                <p>Don't have account <a href="#">Create One</a></p>
+                <input type="submit" value="Login" class="btn">
+            </form>
+        </nav>
+    </div>
+</header>
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Oraganic <span> Quality Products </span>  For You</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Rerum necessitatibus repudiandae est?</p>
+        <a href="#" class="btn">Shop it</a>
+    </div>
+</section>
+
+<section class="features" id="features">
+    <h1 class="heading">Our <span>Features</span></h1>
+    <div class="box-container">
+
+    
+    <div class="box">
+        <img src="/images/julia-zolotova-M_xIaxQE3Ms-unsplash (1).jpg" alt="">
+        <h3>Fruits and Vegetables</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam in aliquid.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="box">
+        <img src="/images/markus-spiske-vyHo3nnk8G8-unsplash.jpg" alt="">
+        <h3>Fruits and Vegetables</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam in aliquid.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="box">
+        <img src="/images/nathan-dumlao-bRdRUUtbxO0-unsplash.jpg" alt="">
+        <h3>Fruits and Vegetables</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam in aliquid.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+</div>
+</section>
+
+<section class="products" id="products">
+    <h1 class="heading">Our <span>Products</span></h1>
+
+    <div class="swiper products-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="/images/art-rachen-izi5AnlbRIA-unsplash.jpg" alt="">
+                <h3>Watermelon</h3>
+                <div class="price">Rs100</div>
+                <div class="stars">
+                        
+                </div>
+                <a href="#" class="btn">Add to Bag</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="/images/deon-black-aEwNCA_uiVg-unsplash.jpg" alt="">
+                <h3>Banana</h3>
+                <div class="price">Rs100</div>
+                <div class="stars">
+
+                </div>
+                <a href="#" class="btn">Add to Bag</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="/images/vivek-sharma-rDDICrot22U-unsplash.jpg" alt="">
+                <h3>Onion</h3>
+                <div class="price">Rs100</div>
+                <div class="stars">
+
+                </div>
+                <a href="#" class="btn">Add to Bag</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper products-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="/images/eric-prouzet-DzN-T3ceOMI-unsplash.jpg" alt="">
+                <h3>Cabbage</h3>
+                <div class="price">Rs100</div>
+                <div class="stars">
+                        
+                </div>
+                <a href="#" class="btn">Add to Bag</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="/images/jen-gunter-A4BBdJQu2co-unsplash.jpg" alt="">
+                <h3>Orange/h3>
+                <div class="price">Rs100</div>
+                <div class="stars">
+
+                </div>
+                <a href="#" class="btn">Add to Bag</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="/images/josephine-baran-g4wzhY8qiMw-unsplash.jpg" alt="">
+                <h3>Tomato</h3>
+                <div class="price">Rs100</div>
+                <div class="stars">
+
+                </div>
+                <a href="#" class="btn">Add to Bag</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

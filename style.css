@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+section{
+    padding: 2rem 8%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 12px;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    width: 100vw;
+}
+nav ul li a{
+    color: black;
+    position: relative;
+    font-size: 1.2rem;
+}
+nav ul li a::after{
+
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background: orange;
+    position: absolute;
+    
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav .right{
+    padding: 10 20px;
+    margin-right: 100px;
+}
+nav .right img{
+    padding: 10px;
+    background: rgb(225, 225, 225);
+    border-radius: 0.5rem;
+    margin-left: 0;
+    cursor: pointer;
+
+}
+nav .right img:hover{
+    background: orange;
+    color: white;
+}
+
+.logo{
+    margin-left: 50px;
+}
+#menubutton{
+    display: none;
+}
+
+.search-form{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height:3.5rem ;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+
+}
+.search-form input{
+    height: 60%;
+    width: 35%;
+    text-transform: none;
+    background:none ;
+    font-size: 1.2rem;
+    color: var(--black);
+    border: 1px solid grey;
+    
+}
+.search-form label{
+    cursor: pointer;
+}
+
+.search-form.active{
+    right: 0rem;
+    transition: 0.3s linear;
+    left: 68rem;
+}
+
+nav .shopping-bag{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    width: 20rem;
+    background: rgb(235, 235, 235);
+}
+nav .shopping-bag.active{
+    right: 2rem;
+    transition: 0.3s linear;
+}
+nav .shopping-bag .box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+nav .box .bag-img{
+    height: 100px;
+}
+
+nav .box .bin{
+    height: 1.2rem;
+    position: absolute;
+    top: 50%;
+
+    right: 2rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+nav .box h3{
+    color: rgb(75, 75, 75);
+    padding-bottom: 20px;
+}
+
+nav .box span{
+    color: rgb(93, 93, 93);
+}
+nav .box .quantity{
+    padding-left: 1rem;
+}
+
+nav .total{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+.btn{
+    padding:0.5rem 0.8rem;
+    display: block;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    
+    
+}
+.btn:hover{
+    background-color: orange;
+    color: white;
+}
+nav .right #bagbutton{
+    height: 50px;
+}
+
+.loginform{
+   position: absolute;
+   top: 110%;
+   right: -110%;
+
+   padding: 1rem;
+   box-shadow: var(--box-shadow);
+   background-color:rgb(235, 235, 235);
+   width: 20rem;
+   text-align: center;
+}
+
+.loginform .box{
+    margin: 0.3rem 0;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+
+    background-color: none;
+    width: 100%;
+
+
+}
+.loginform h3{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: orange;
+}
+
+.loginform p{
+    color: grey;
+
+    margin-top: 1rem;
+}
+.loginform p a{
+
+    color: orange;
+    text-decoration: underline;
+}
+.loginform .btn{
+   
+    width: 100%;
+    display: block;
+    margin-top: 1rem;
+}
+
+
+.loginform.active{
+    right: 2rem;
+    transition: 0.3s linear;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/pexels-photomix-company-868110.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 16rem;
+    padding-bottom: 10rem;
+}
+
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+.home h3{
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+.home h3 span{
+    color: orange;
+}
+.home p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.home .btn{
+
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.features{
+    background: rgb(208, 208, 208);
+}
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.heading span{
+    background: orange;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 6% 50%, 0% 0%);
+}
+
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+
+}
+.features .box-container .box{
+    padding: 3rem 2rem;
+    background-color: white;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    outline-offset: -1rem; 
+}
+.box img{
+    height: 200px;
+}
+.features .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem; 
+
+}
+.products{
+    background: rgb(208, 208, 208);
+
+}
+.products .products-slider{
+
+    padding: 1rem;
+}
+
+
+
+.products .products-slider .box{
+    background-color: white;
+    padding: 3rem 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: .3s linear;
+
+    border: 2px solid black;
+
+}
+
+.box h3{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.box .btn{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+@media(max-width:990px){
+    nav .right {
+       margin-right: 0;
+    }
+    nav .logo{
+        margin-left: 0;
+    }
+
+}
+
+@media(max-width:835px){
+
+    .header .container .navbar{
+      
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        border-radius: 0.5rem;
+        width:16rem;
+        background-color: rgb(215, 215, 215);
+        /* padding: 1rem; */
+        
+
+    }
+    .header .container .navbar.active{
+        right: 2rem;
+        transition: 0.3s linear;
+    }
+    #menubutton{
+        display: inline-block;
+
+    }
+    .header .container .navbar a {
+        font-size: 1.2rem;
+        margin: 1rem 2rem;
+        display: block;
+
+    }
+    .search-form{
+       display: none;
+
+    }
+
+} 
+
+@media(max-width:490px){
+
+    .home h3{
+        font-size: 1.9rem;
+    }
+
+}
